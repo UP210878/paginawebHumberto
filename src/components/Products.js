@@ -3,8 +3,8 @@ import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
 
 const Products = () => {
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom>
+    <Container >
+      <Typography variant="h4" gutterBottom my={4}>
         Our Products & Services
       </Typography>
       <Grid container spacing={4}>

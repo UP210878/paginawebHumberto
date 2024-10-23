@@ -2,12 +2,22 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Home from './components/Home';
-import Products from './components/Products';
+import Products from './components/Products'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 import Contact from './components/Contact';
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 function App() {
   return (
+      <ThemeProvider theme={theme}>
     <Router>
+
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -24,6 +34,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
+      </ThemeProvider>
   );
 }
 
