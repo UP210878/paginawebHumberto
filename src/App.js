@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, CssBaseline } from '@mui/material';
 import Home from './components/Home';
 import Products from './components/Products'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -16,6 +16,7 @@ const theme = createTheme({
 function App() {
   return (
       <ThemeProvider theme={theme}>
+        <CssBaseline />
     <Router>
 
       <AppBar position="static">
