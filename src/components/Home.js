@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <Container>
       <Box my={4}>
-        <Typography variant="h4" gutterBottom style={{textAlign: 'center'}}>
+        <Typography variant="h4" gutterBottom style={{ textAlign: 'center' }}>
           Sobre SecurePro
         </Typography>
 
@@ -64,6 +64,11 @@ const Home = () => {
               </Typography>
             </CardContent>
           </ZoomCard>
+        </Box>
+
+        {/* Centrar la imagen y añadir margen superior */}
+        <Box display="flex" justifyContent="center" mt={4}>
+          <img src="/images/anuncio.jpg" alt="anuncio" style={{ width: '600px', height: 'auto' }} />
         </Box>
 
       </Box>
